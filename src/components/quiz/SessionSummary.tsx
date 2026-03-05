@@ -1,10 +1,12 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Trophy, RotateCcw, Home, Target } from "lucide-react";
 import Link from "next/link";
 import { PracticeMode } from "@/types";
 import { cn } from "@/lib/utils";
+import { useConfetti } from "@/hooks/useConfetti";
 
 interface SessionSummaryProps {
   total: number;
@@ -15,8 +17,13 @@ interface SessionSummaryProps {
 
 export function SessionSummary({ total, correct, mode, onRestart }: SessionSummaryProps) {
   const score = Math.round((correct / total) * 100);
-  const passed = mode === "exam" ? score >= 67 : score >= 50; // 67% needed for real exam
+  const passed = mode === "exam" ? score >= 67 : score >= 50;
   const incorrect = total - correct;
+  const fireConfetti = useConfetti();
+
+  useEffect(() => {
+    fireConfetti(score);
+  }, [score, fireConfetti]);
 
   const getEmoji = () => {
     if (score === 100) return "🎉";

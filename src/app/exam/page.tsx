@@ -2,11 +2,12 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Trophy, Clock, AlertTriangle, ChevronRight } from "lucide-react";
+import { Trophy } from "lucide-react";
 import { usePracticeQuestions, useAllStates } from "@/hooks/useQuestions";
 import { useProgressStore } from "@/store/progress";
 import { QuizCard } from "@/components/quiz/QuizCard";
 import { SessionSummary } from "@/components/quiz/SessionSummary";
+import { ExamTimer } from "@/components/quiz/ExamTimer";
 import { cn } from "@/lib/utils";
 
 const EXAM_DURATION = 60 * 60; // 60 minutes in seconds
@@ -67,14 +68,6 @@ export default function ExamPage() {
     setDone(false);
   };
 
-  const formatTime = (s: number) => {
-    const m = Math.floor(s / 60);
-    const sec = s % 60;
-    return `${m.toString().padStart(2, "0")}:${sec.toString().padStart(2, "0")}`;
-  };
-
-  const timerColor =
-    timeLeft > 600 ? "text-emerald-400" : timeLeft > 300 ? "text-amber-400" : "text-rose-400";
 
   if (done) {
     const correct = Object.entries(answers).filter(([qId, ans]) => {
@@ -160,12 +153,11 @@ export default function ExamPage() {
         <div className="flex items-center gap-2">
           <Trophy className="w-4 h-4 text-amber-400" />
           <span className="text-sm font-medium text-foreground">Exam Mode</span>
+          <span className="text-xs text-muted-foreground tabular-nums">
+            {currentIndex + 1}/{questions.length}
+          </span>
         </div>
-        <div className={cn("flex items-center gap-1.5 font-mono font-bold text-sm tabular-nums", timerColor)}>
-          {timeLeft <= 300 && <AlertTriangle className="w-3.5 h-3.5" />}
-          <Clock className="w-3.5 h-3.5" />
-          {formatTime(timeLeft)}
-        </div>
+        <ExamTimer timeLeft={timeLeft} totalTime={EXAM_DURATION} />
       </div>
 
       <AnimatePresence mode="wait">
