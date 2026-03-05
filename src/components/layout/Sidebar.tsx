@@ -46,7 +46,7 @@ export function Sidebar() {
       {/* Stats strip */}
       <div className="grid grid-cols-3 gap-2 px-4 py-3 border-b border-white/[0.06]">
         <StatChip label="Accuracy" value={`${accuracy}%`} color="text-primary" />
-        <StatChip label="Attempts" value={totalAttempts.toString()} color="text-secondary" />
+        <StatChip label="Attempts" value={totalAttempts.toString()} color="text-emerald-400" />
         <StatChip
           label="Streak"
           value={`${streak}d`}
