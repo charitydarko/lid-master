@@ -73,7 +73,7 @@ export default function FocusPage() {
         </header>
 
         {incorrectQuestionIds.length === 0 ? (
-          <div className="glass border border-white/[0.08] rounded-2xl p-10 flex flex-col items-center gap-4 text-center">
+          <div className="glass border border-border rounded-2xl p-10 flex flex-col items-center gap-4 text-center">
             <BookCheck className="w-12 h-12 text-emerald-400" />
             <div>
               <p className="text-lg font-semibold text-foreground">No incorrect answers yet!</p>

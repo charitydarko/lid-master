@@ -15,10 +15,10 @@ type ActiveMode = "topic" | "random" | "state" | null;
 type SelectedTopic = Topic | "all";
 
 const TOPICS: { id: SelectedTopic; label: string; icon: typeof BookOpen; color: string; count: number }[] = [
-  { id: "all", label: "All Topics", icon: GraduationCap, color: "text-blue-400", count: 300 },
-  { id: "politik", label: "Politik", icon: BookOpen, color: "text-blue-400", count: 90 },
-  { id: "geschichte", label: "Geschichte", icon: History, color: "text-amber-400", count: 104 },
-  { id: "gesellschaft", label: "Gesellschaft", icon: Users, color: "text-purple-400", count: 106 },
+  { id: "all", label: "All Topics", icon: GraduationCap, color: "text-blue-500 dark:text-blue-400", count: 300 },
+  { id: "politik", label: "Politik", icon: BookOpen, color: "text-blue-500 dark:text-blue-400", count: 90 },
+  { id: "geschichte", label: "Geschichte", icon: History, color: "text-amber-500 dark:text-amber-400", count: 104 },
+  { id: "gesellschaft", label: "Gesellschaft", icon: Users, color: "text-purple-500 dark:text-purple-400", count: 106 },
 ];
 
 export default function PracticePage() {
@@ -115,7 +115,7 @@ export default function PracticePage() {
                     "flex flex-col gap-1.5 px-4 py-3 rounded-xl border text-left transition-all",
                     selectedTopic === t.id
                       ? "bg-primary/15 border-primary/30 text-primary"
-                      : "bg-white/[0.03] border-white/[0.07] text-muted-foreground hover:text-foreground hover:border-white/[0.12]"
+                      : "bg-foreground/[0.04] border-border text-muted-foreground hover:text-foreground hover:border-foreground/20"
                   )}
                 >
                   <t.icon className={cn("w-4 h-4", selectedTopic === t.id ? "text-primary" : t.color)} />
@@ -148,8 +148,8 @@ export default function PracticePage() {
                   className={cn(
                     "px-3 py-2.5 rounded-xl border text-xs text-left transition-all",
                     selectedState === s
-                      ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
-                      : "bg-white/[0.03] border-white/[0.07] text-muted-foreground hover:text-foreground"
+                      ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-600 dark:text-emerald-400"
+                      : "bg-foreground/[0.04] border-border text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {s}
@@ -195,9 +195,9 @@ function ModeCard({
   color: "blue" | "purple" | "emerald";
 }) {
   const activeStyles = {
-    blue: "bg-blue-500/10 border-blue-500/30 text-blue-400",
-    purple: "bg-purple-500/10 border-purple-500/30 text-purple-400",
-    emerald: "bg-emerald-500/10 border-emerald-500/30 text-emerald-400",
+    blue: "bg-blue-500/10 border-blue-500/30 text-blue-600 dark:text-blue-400",
+    purple: "bg-purple-500/10 border-purple-500/30 text-purple-600 dark:text-purple-400",
+    emerald: "bg-emerald-500/10 border-emerald-500/30 text-emerald-600 dark:text-emerald-400",
   };
 
   return (
@@ -207,12 +207,12 @@ function ModeCard({
         "group flex items-center gap-4 px-4 py-4 rounded-xl border transition-all w-full text-left",
         active
           ? activeStyles[color]
-          : "bg-white/[0.03] border-white/[0.07] hover:border-white/[0.12]"
+          : "bg-foreground/[0.04] border-border hover:border-foreground/20"
       )}
     >
       <div className={cn(
         "w-10 h-10 rounded-xl flex items-center justify-center transition-colors",
-        active ? "bg-white/10" : "bg-white/[0.05]"
+        active ? "bg-foreground/10" : "bg-foreground/[0.06]"
       )}>
         <span className={cn(active ? activeStyles[color].split(" ")[2] : "text-muted-foreground")}>
           {icon}

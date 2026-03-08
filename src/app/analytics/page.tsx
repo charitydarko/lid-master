@@ -101,7 +101,7 @@ export default function AnalyticsPage() {
       </div>
 
       {/* Topic breakdown */}
-      <div className="glass border border-white/[0.08] rounded-2xl p-5">
+      <div className="glass border border-border rounded-2xl p-5">
         <h2 className="text-sm font-semibold text-foreground mb-4">Topic Performance</h2>
         <div className="space-y-4">
           {topics.map((topic) => {
@@ -118,7 +118,7 @@ export default function AnalyticsPage() {
                     <span className="text-foreground font-semibold ml-1">{stat.accuracy}%</span>
                   </div>
                 </div>
-                <div className="h-2 bg-white/[0.06] rounded-full overflow-hidden">
+                <div className="h-2 bg-foreground/[0.07] rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: `${stat.accuracy}%` }}
@@ -133,7 +133,7 @@ export default function AnalyticsPage() {
       </div>
 
       {/* Knowledge Heatmap */}
-      <div className="glass border border-white/[0.08] rounded-2xl p-5">
+      <div className="glass border border-border rounded-2xl p-5">
         <h2 className="text-sm font-semibold text-foreground mb-1">Knowledge Heatmap</h2>
         <p className="text-xs text-muted-foreground mb-4">300 general questions — color shows status</p>
 
@@ -152,7 +152,7 @@ export default function AnalyticsPage() {
                     ? "rgb(16,185,129)"
                     : isIncorrect
                     ? "rgb(244,63,94)"
-                    : "rgba(255,255,255,0.07)",
+                    : "var(--heatmap-unseen)",
                   opacity: isMastered || isIncorrect ? 1 : 0.5,
                 }}
                 title={`Q${q.id} • ${cfg.label}${isMastered ? " • Mastered" : isIncorrect ? " • Needs review" : ""}`}
@@ -167,7 +167,7 @@ export default function AnalyticsPage() {
           {[
             { color: "bg-emerald-500", label: "Mastered" },
             { color: "bg-rose-500", label: "Needs review" },
-            { color: "bg-white/10", label: "Not attempted" },
+            { color: "bg-foreground/10", label: "Not attempted" },
           ].map((l) => (
             <div key={l.label} className="flex items-center gap-1.5">
               <div className={cn("w-3 h-3 rounded-sm", l.color)} />
@@ -179,7 +179,7 @@ export default function AnalyticsPage() {
 
       {/* Recent performance graph placeholder */}
       {totalAttempts === 0 && (
-        <div className="glass border border-white/[0.08] rounded-2xl p-8 text-center">
+        <div className="glass border border-border rounded-2xl p-8 text-center">
           <Calendar className="w-8 h-8 text-muted-foreground mx-auto mb-3" />
           <p className="text-sm font-medium text-foreground">No data yet</p>
           <p className="text-xs text-muted-foreground mt-1">
@@ -213,7 +213,7 @@ function StatCard({
   return (
     <div
       className={cn(
-        "glass border border-white/[0.08] rounded-xl p-4 flex flex-col gap-2",
+        "glass border border-border rounded-xl p-4 flex flex-col gap-2",
         glow && "pulse-amber"
       )}
     >
@@ -224,7 +224,7 @@ function StatCard({
       <p className={cn("text-xl font-bold tabular-nums", color)}>{value}</p>
       <p className="text-[10px] text-muted-foreground">{sub}</p>
       {bar !== undefined && barColor && (
-        <div className="h-1 bg-white/[0.06] rounded-full overflow-hidden">
+        <div className="h-1 bg-foreground/[0.07] rounded-full overflow-hidden">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${bar}%` }}

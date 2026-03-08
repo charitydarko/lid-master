@@ -38,7 +38,7 @@ export function FlipCard({ question, onNext, className }: FlipCardProps) {
       >
         {/* FRONT — German question */}
         <div className="absolute inset-0 backface-hidden">
-          <div className="h-full glass border border-white/[0.08] rounded-2xl p-6 flex flex-col justify-between hover:border-primary/20 transition-colors">
+          <div className="h-full glass border border-border rounded-2xl p-6 flex flex-col justify-between hover:border-primary/20 transition-colors">
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-2">
                 <TopicBadge topic={question.topic} />

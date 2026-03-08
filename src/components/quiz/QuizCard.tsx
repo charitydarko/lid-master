@@ -58,9 +58,9 @@ export function QuizCard({
       transition={{ duration: 0.25 }}
       className="w-full"
     >
-      <div className="glass border border-white/[0.08] rounded-2xl overflow-hidden">
+      <div className="glass border border-border rounded-2xl overflow-hidden">
         {/* Header */}
-        <div className="flex items-center justify-between px-5 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+        <div className="flex items-center justify-between px-5 py-3 border-b border-border bg-foreground/[0.02]">
           <div className="flex items-center gap-2">
             <span className={cn("w-2 h-2 rounded-full", tc.dot)} />
             <span className={cn("text-xs font-medium", tc.color)}>{tc.label}</span>
@@ -71,7 +71,7 @@ export function QuizCard({
         </div>
 
         {/* Progress bar */}
-        <div className="h-0.5 bg-white/[0.04]">
+        <div className="h-0.5 bg-foreground/[0.05]">
           <div
             className="h-full bg-primary transition-all duration-500"
             style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
@@ -108,7 +108,7 @@ export function QuizCard({
                 className={cn(
                   optionClass,
                   "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-left transition-all",
-                  "bg-white/[0.03] border border-white/[0.07]",
+                  "bg-foreground/[0.04] border border-border",
                   !answered && "hover:bg-primary/8",
                   answered && "cursor-default"
                 )}
@@ -122,7 +122,7 @@ export function QuizCard({
                       ? "bg-emerald-500 text-white"
                       : answered && isSelected && !isCorrect
                       ? "bg-rose-500 text-white"
-                      : "bg-white/[0.07] text-muted-foreground"
+                      : "bg-foreground/[0.08] text-muted-foreground"
                   )}
                 >
                   {["A", "B", "C", "D"][idx]}
@@ -149,7 +149,7 @@ export function QuizCard({
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="border-t border-white/[0.06]"
+              className="border-t border-border"
             >
               {/* Result banner */}
               <div

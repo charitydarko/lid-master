@@ -30,7 +30,7 @@ export function ExamTimer({ timeLeft, totalTime }: ExamTimerProps) {
           ? "bg-rose-500/15 border-rose-500/30"
           : isWarning
           ? "bg-amber-500/15 border-amber-500/30"
-          : "bg-white/[0.04] border-white/[0.08]"
+          : "bg-foreground/[0.05] border-border"
       )}
       aria-label={`Time remaining: ${minutes} minutes ${seconds} seconds`}
       role="timer"
@@ -42,7 +42,7 @@ export function ExamTimer({ timeLeft, totalTime }: ExamTimerProps) {
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke="rgba(255,255,255,0.06)"
+          stroke="var(--ring-track)"
           strokeWidth={3}
         />
         <motion.circle

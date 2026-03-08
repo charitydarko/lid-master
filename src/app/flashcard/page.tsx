@@ -36,7 +36,7 @@ export default function FlashcardPage() {
           </div>
           <button
             onClick={() => setShowPicker((s) => !s)}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl glass border border-white/[0.08] text-xs text-muted-foreground hover:text-foreground transition-colors"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl glass border border-border text-xs text-muted-foreground hover:text-foreground transition-colors"
           >
             <Map className="w-3.5 h-3.5" />
             {selectedState}
@@ -51,7 +51,7 @@ export default function FlashcardPage() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="mb-6 glass border border-white/[0.08] rounded-xl p-4"
+            className="mb-6 glass border border-border rounded-xl p-4"
           >
             <div className="grid grid-cols-2 gap-1.5 max-h-52 overflow-y-auto">
               {states.map((s) => (
@@ -66,7 +66,7 @@ export default function FlashcardPage() {
                     "px-3 py-2 rounded-lg border text-xs text-left transition-all",
                     selectedState === s
                       ? "bg-primary/15 border-primary/30 text-primary"
-                      : "bg-white/[0.02] border-white/[0.06] text-muted-foreground hover:text-foreground"
+                      : "bg-foreground/[0.02] border-border text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {s}
@@ -85,7 +85,7 @@ export default function FlashcardPage() {
             onClick={() => setIndex(i)}
             className={cn(
               "h-1.5 rounded-full transition-all duration-300",
-              i === index ? "bg-primary w-6" : "bg-white/20 w-1.5 hover:bg-white/40"
+              i === index ? "bg-primary w-6" : "bg-foreground/20 w-1.5 hover:bg-foreground/40"
             )}
             aria-label={`Go to card ${i + 1}`}
           />
@@ -122,7 +122,7 @@ export default function FlashcardPage() {
       <div className="flex items-center justify-between mt-6">
         <button
           onClick={prev}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass border border-white/[0.08] text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass border border-border text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
         >
           <ChevronLeft className="w-4 h-4" />
           Previous
@@ -130,7 +130,7 @@ export default function FlashcardPage() {
         <span className="text-xs text-muted-foreground">Tap card to flip</span>
         <button
           onClick={next}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass border border-white/[0.08] text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass border border-border text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
         >
           Next
           <ChevronRight className="w-4 h-4" />

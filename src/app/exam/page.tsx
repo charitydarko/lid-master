@@ -106,7 +106,7 @@ export default function ExamPage() {
             { label: "Time", value: "60 min", sub: "Counts down" },
             { label: "Pass score", value: "67%", sub: "22/33 correct" },
           ].map((item) => (
-            <div key={item.label} className="glass border border-white/[0.08] rounded-xl px-3 py-4 text-center">
+            <div key={item.label} className="glass border border-border rounded-xl px-3 py-4 text-center">
               <p className="text-lg font-bold text-foreground tabular-nums">{item.value}</p>
               <p className="text-[10px] text-muted-foreground mt-0.5">{item.sub}</p>
             </div>
@@ -114,7 +114,7 @@ export default function ExamPage() {
         </div>
 
         {/* State selector */}
-        <div className="glass border border-white/[0.08] rounded-xl p-4 mb-6">
+        <div className="glass border border-border rounded-xl p-4 mb-6">
           <p className="text-xs font-semibold text-muted-foreground mb-3">State-specific questions for:</p>
           <div className="grid grid-cols-2 gap-1.5 max-h-52 overflow-y-auto">
             {states.map((s) => (
@@ -125,7 +125,7 @@ export default function ExamPage() {
                   "px-3 py-2 rounded-lg border text-xs text-left transition-all",
                   selectedState === s
                     ? "bg-amber-500/15 border-amber-500/30 text-amber-400"
-                    : "bg-white/[0.02] border-white/[0.06] text-muted-foreground hover:text-foreground"
+                    : "bg-foreground/[0.02] border-border text-muted-foreground hover:text-foreground"
                 )}
               >
                 {s}

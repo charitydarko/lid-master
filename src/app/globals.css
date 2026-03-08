@@ -47,9 +47,60 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
+/* ================================
+   LIGHT MODE (default / :root)
+================================ */
 :root {
   --radius: 0.75rem;
-  /* Always dark – LiD Master uses Adaptive Dark Mode 2.0 */
+  --background: oklch(0.97 0.005 260);
+  --foreground: oklch(0.12 0.01 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.12 0.01 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.12 0.01 260);
+  /* Electric blue primary */
+  --primary: oklch(0.52 0.22 264);
+  --primary-foreground: oklch(1 0 0);
+  /* Emerald secondary */
+  --secondary: oklch(0.48 0.16 162);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.92 0.006 260);
+  --muted-foreground: oklch(0.46 0.01 260);
+  --accent: oklch(0.52 0.22 264);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.55 0.22 27);
+  --border: oklch(0 0 0 / 10%);
+  --input: oklch(0 0 0 / 12%);
+  --ring: oklch(0.52 0.22 264);
+  --chart-1: oklch(0.52 0.22 264);
+  --chart-2: oklch(0.48 0.16 162);
+  --chart-3: oklch(0.62 0.18 84);
+  --chart-4: oklch(0.58 0.24 303);
+  --chart-5: oklch(0.55 0.22 27);
+  --sidebar: oklch(0.94 0.005 260);
+  --sidebar-foreground: oklch(0.12 0.01 260);
+  --sidebar-primary: oklch(0.52 0.22 264);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.89 0.005 260);
+  --sidebar-accent-foreground: oklch(0.12 0.01 260);
+  --sidebar-border: oklch(0 0 0 / 10%);
+  --sidebar-ring: oklch(0.52 0.22 264);
+  color-scheme: light;
+
+  /* Custom theme-aware tokens */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-hover-bg: rgba(0, 0, 0, 0.04);
+  --ring-track: rgba(0, 0, 0, 0.08);
+  --option-border: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.15);
+  --heatmap-unseen: rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   DARK MODE (.dark class via next-themes)
+================================ */
+.dark {
   --background: oklch(0.11 0.01 260);
   --foreground: oklch(0.94 0 0);
   --card: oklch(0.14 0.01 260);
@@ -84,40 +135,15 @@
   --sidebar-border: oklch(1 0 0 / 8%);
   --sidebar-ring: oklch(0.6 0.2 264);
   color-scheme: dark;
-}
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Custom theme-aware tokens */
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-hover-bg: rgba(255, 255, 255, 0.07);
+  --ring-track: rgba(255, 255, 255, 0.06);
+  --option-border: rgba(255, 255, 255, 0.08);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --heatmap-unseen: rgba(255, 255, 255, 0.07);
 }
 
 @layer base {
@@ -133,16 +159,16 @@
    LiD Master Custom Styles
 ================================ */
 
-/* Glassmorphism */
+/* Glassmorphism — theme-aware via CSS variables */
 .glass {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--glass-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
 }
 
 .glass-hover:hover {
-  background: rgba(255, 255, 255, 0.07);
+  background: var(--glass-hover-bg);
 }
 
 /* Gradient mesh background */
@@ -166,7 +192,7 @@
 .option-btn {
   transition: all 0.15s ease;
   cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid var(--option-border);
 }
 .option-btn:not(:disabled):hover {
   transform: translateX(4px);
@@ -192,7 +218,7 @@
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--scrollbar-thumb);
   border-radius: 3px;
 }
 
@@ -215,4 +241,10 @@
 .bottom-dock {
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Ensure html element carries the theme background (body gradient overrides bg-background) */
+html {
+  background-color: var(--background);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }

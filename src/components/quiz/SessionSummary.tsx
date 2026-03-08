@@ -46,7 +46,7 @@ export function SessionSummary({ total, correct, mode, onRestart }: SessionSumma
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
-      className="glass border border-white/[0.08] rounded-2xl overflow-hidden"
+      className="glass border border-border rounded-2xl overflow-hidden"
     >
       {/* Score header */}
       <div
@@ -83,7 +83,7 @@ export function SessionSummary({ total, correct, mode, onRestart }: SessionSumma
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-3 divide-x divide-white/[0.06] border-y border-white/[0.06]">
+      <div className="grid grid-cols-3 divide-x divide-border border-y border-border">
         <StatBox label="Correct" value={correct} color="text-emerald-400" />
         <StatBox label="Incorrect" value={incorrect} color="text-rose-400" />
         <StatBox label="Total" value={total} color="text-foreground" />
@@ -95,7 +95,7 @@ export function SessionSummary({ total, correct, mode, onRestart }: SessionSumma
           <span>Score</span>
           <span className="tabular-nums">{correct}/{total}</span>
         </div>
-        <div className="h-2 bg-white/[0.06] rounded-full overflow-hidden">
+        <div className="h-2 bg-foreground/[0.07] rounded-full overflow-hidden">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${score}%` }}
@@ -128,14 +128,14 @@ export function SessionSummary({ total, correct, mode, onRestart }: SessionSumma
         <div className="grid grid-cols-2 gap-2">
           <Link
             href="/focus"
-            className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
+            className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-foreground/[0.05] border border-border text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
           >
             <Target className="w-4 h-4" />
             Focus Mode
           </Link>
           <Link
             href="/"
-            className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
+            className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-foreground/[0.05] border border-border text-sm text-muted-foreground hover:text-foreground transition-all active:scale-95"
           >
             <Home className="w-4 h-4" />
             Home

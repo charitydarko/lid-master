@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useProgressStore } from "@/store/progress";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { href: "/", icon: BookOpen, label: "Practice", description: "Study questions" },
@@ -31,9 +32,9 @@ export function Sidebar() {
     totalAttempts > 0 ? Math.round((correctAnswers / totalAttempts) * 100) : 0;
 
   return (
-    <div className="flex flex-col h-full glass border-r border-white/[0.06]">
+    <div className="flex flex-col h-full glass border-r border-border">
       {/* Logo */}
-      <div className="flex items-center gap-3 px-6 py-5 border-b border-white/[0.06]">
+      <div className="flex items-center gap-3 px-6 py-5 border-b border-border">
         <div className="w-9 h-9 rounded-xl bg-primary/20 border border-primary/30 flex items-center justify-center glow-blue">
           <GraduationCap className="w-5 h-5 text-primary" />
         </div>
@@ -44,13 +45,13 @@ export function Sidebar() {
       </div>
 
       {/* Stats strip */}
-      <div className="grid grid-cols-3 gap-2 px-4 py-3 border-b border-white/[0.06]">
+      <div className="grid grid-cols-3 gap-2 px-4 py-3 border-b border-border">
         <StatChip label="Accuracy" value={`${accuracy}%`} color="text-primary" />
-        <StatChip label="Attempts" value={totalAttempts.toString()} color="text-emerald-400" />
+        <StatChip label="Attempts" value={totalAttempts.toString()} color="text-emerald-500 dark:text-emerald-400" />
         <StatChip
           label="Streak"
           value={`${streak}d`}
-          color="text-amber-400"
+          color="text-amber-500 dark:text-amber-400"
           glow={streak > 0}
         />
       </div>
@@ -67,7 +68,7 @@ export function Sidebar() {
                 "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-150 group",
                 active
                   ? "bg-primary/15 border border-primary/25 text-primary glow-blue"
-                  : "text-muted-foreground hover:text-foreground hover:bg-white/[0.04]"
+                  : "text-muted-foreground hover:text-foreground hover:bg-foreground/[0.04]"
               )}
               aria-current={active ? "page" : undefined}
             >
@@ -94,15 +95,16 @@ export function Sidebar() {
       </nav>
 
       {/* Progress ring footer */}
-      <div className="px-4 py-4 border-t border-white/[0.06]">
+      <div className="px-4 py-4 border-t border-border">
         <div className="flex items-center gap-3">
           <ProgressRing value={accuracy} size={44} />
-          <div>
+          <div className="flex-1 min-w-0">
             <p className="text-xs font-medium text-foreground">Overall Progress</p>
             <p className="text-[10px] text-muted-foreground mt-0.5">
               {correctAnswers}/{totalAttempts} correct
             </p>
           </div>
+          <ThemeToggle />
         </div>
       </div>
     </div>
@@ -123,7 +125,7 @@ function StatChip({
   return (
     <div
       className={cn(
-        "flex flex-col items-center py-2 rounded-lg bg-white/[0.03] border border-white/[0.05]",
+        "flex flex-col items-center py-2 rounded-lg bg-foreground/[0.03] border border-border",
         glow && "pulse-amber"
       )}
     >
@@ -145,7 +147,7 @@ function ProgressRing({ value, size }: { value: number; size: number }) {
         cy={size / 2}
         r={radius}
         fill="none"
-        stroke="rgba(255,255,255,0.06)"
+        stroke="var(--ring-track)"
         strokeWidth={4}
       />
       <circle

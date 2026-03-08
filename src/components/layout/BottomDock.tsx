@@ -17,7 +17,7 @@ export function BottomDock() {
   const pathname = usePathname();
 
   return (
-    <div className="bottom-dock border-t border-white/[0.06] bg-background/80">
+    <div className="bottom-dock border-t border-border bg-background/80">
       <div className="flex items-center justify-around px-2 py-2 safe-area-bottom">
         {dockItems.map((item) => {
           const active = pathname === item.href;

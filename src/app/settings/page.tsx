@@ -25,7 +25,7 @@ export default function SettingsPage() {
     <div className="max-w-2xl mx-auto px-4 py-8 space-y-6">
       <header>
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-foreground/[0.07] border border-border flex items-center justify-center">
             <Settings className="w-5 h-5 text-foreground" />
           </div>
           <div>
@@ -36,7 +36,7 @@ export default function SettingsPage() {
       </header>
 
       {/* About */}
-      <div className="glass border border-white/[0.08] rounded-2xl p-5">
+      <div className="glass border border-border rounded-2xl p-5">
         <div className="flex items-center gap-3 mb-4">
           <GraduationCap className="w-5 h-5 text-primary" />
           <p className="text-sm font-semibold text-foreground">About LiD Master</p>
@@ -51,7 +51,7 @@ export default function SettingsPage() {
       </div>
 
       {/* Default state */}
-      <div className="glass border border-white/[0.08] rounded-2xl p-5">
+      <div className="glass border border-border rounded-2xl p-5">
         <div className="flex items-center gap-2 mb-4">
           <Map className="w-4 h-4 text-emerald-400" />
           <p className="text-sm font-semibold text-foreground">Default Bundesland</p>
@@ -65,7 +65,7 @@ export default function SettingsPage() {
                 "px-3 py-2 rounded-lg border text-xs text-left transition-all",
                 selectedState === s
                   ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
-                  : "bg-white/[0.02] border-white/[0.06] text-muted-foreground hover:text-foreground"
+                  : "bg-foreground/[0.02] border-border text-muted-foreground hover:text-foreground"
               )}
             >
               {s}
