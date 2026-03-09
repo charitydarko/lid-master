@@ -40,7 +40,7 @@ const defaultProgress: UserProgress = {
     staat: defaultTopicStats("staat"),
   },
   recentSessions: [],
-  selectedState: "Bayern",
+  selectedState: "Nordrhein-Westfalen",
   streak: 0,
 };
 
