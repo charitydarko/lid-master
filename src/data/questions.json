@@ -6435,7 +6435,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Baden-Württemberg from the LiD exam catalog."
       },
       {
@@ -6457,7 +6457,7 @@
           "white-blue",
           "green-white-red"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Baden-Württemberg from the LiD exam catalog."
       },
       {
@@ -6567,7 +6567,7 @@
           "Minister of the Interior",
           "Minister of Foreign Affairs"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Baden-Württemberg from the LiD exam catalog."
       }
     ],
@@ -6619,7 +6619,7 @@
           "Nordfriesland",
           "Altötting"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6641,7 +6641,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6663,7 +6663,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6685,7 +6685,7 @@
           "green-white-red",
           "black-yellow"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6707,7 +6707,7 @@
           "at the consumer advice center",
           "at the churches"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6729,7 +6729,7 @@
           "Nuremberg.",
           "Munich."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6773,7 +6773,7 @@
           "Mayor",
           "Minister President"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       },
       {
@@ -6795,7 +6795,7 @@
           "Minister of Finance",
           "Minister of the Interior"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
       }
     ],
@@ -6869,7 +6869,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       },
       {
@@ -6891,7 +6891,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       },
       {
@@ -6913,7 +6913,7 @@
           "green-white-red",
           "black-gold"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       },
       {
@@ -6935,7 +6935,7 @@
           "at the consumer center",
           "at the state center for political education"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       },
       {
@@ -6957,7 +6957,7 @@
           "Brandenburg",
           "Hessen"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       },
       {
@@ -7001,7 +7001,7 @@
           "President of the Senate",
           "Governing Mayor"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       },
       {
@@ -7023,7 +7023,7 @@
           "Senator for Foreign Relations",
           "Justice Senator"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
       }
     ],
@@ -7075,7 +7075,7 @@
           "Vogtlandkreis",
           "Amberg-Sulzbach"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       },
       {
@@ -7097,7 +7097,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       },
       {
@@ -7119,7 +7119,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       },
       {
@@ -7163,7 +7163,7 @@
           "at the state center for political education",
           "at the consumer center"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       },
       {
@@ -7185,7 +7185,7 @@
           "Brandenburg.",
           "Frankfurt/Oder."
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       },
       {
@@ -7229,7 +7229,7 @@
           "Mayor",
           "Minister-President"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       },
       {
@@ -7251,7 +7251,7 @@
           "Finance Minister",
           "Interior Minister"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
       }
     ],
@@ -7325,7 +7325,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
       },
       {
@@ -7347,7 +7347,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
       },
       {
@@ -7369,7 +7369,7 @@
           "green-white-red",
           "black-gold"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
       },
       {
@@ -7391,7 +7391,7 @@
           "at the churches",
           "at the Consumer Center (Verbraucherzentrale)"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
       },
       {
@@ -7457,7 +7457,7 @@
           "President of the Senate (Präsidentin/Präsident des Senates)",
           "Governing Mayor (Regierende Bürgermeisterin/Regierender Bürgermeister)"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
       },
       {
@@ -7479,7 +7479,7 @@
           "Justice Senator",
           "Interior Senator"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
       }
     ],
@@ -7531,7 +7531,7 @@
           "Pankow",
           "Mecklenburgische Seenplatte"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
       },
       {
@@ -7553,7 +7553,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
       },
       {
@@ -7597,7 +7597,7 @@
           "green-white-red",
           "black-yellow"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
       },
       {
@@ -7641,7 +7641,7 @@
           "Bavaria",
           "Thuringia"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
       },
       {
@@ -7685,7 +7685,7 @@
           "Governing Senator (Regierende Senatorin/Regierender Senator)",
           "Lord Mayor (Oberbürgermeisterin/Oberbürgermeister)"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
       },
       {
@@ -7707,7 +7707,7 @@
           "Finance Senator",
           "Interior Senator"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
       }
     ],
@@ -7759,7 +7759,7 @@
           "Prignitz",
           "Main-Taunus-Kreis"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
       },
       {
@@ -7781,7 +7781,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
       },
       {
@@ -7803,7 +7803,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
       },
       {
@@ -7825,7 +7825,7 @@
           "black-gold",
           "green-white-red"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
       },
       {
@@ -7847,7 +7847,7 @@
           "at the municipal regulatory office",
           "at the churches"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
       },
       {
@@ -7913,7 +7913,7 @@
           "Mayor/Mayoress",
           "Minister President/Minister Presidentess"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
       },
       {
@@ -7987,7 +7987,7 @@
           "Vogtlandkreis",
           "Rhein-Sieg-Kreis"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
       },
       {
@@ -8009,7 +8009,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
       },
       {
@@ -8031,7 +8031,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
       },
       {
@@ -8097,7 +8097,7 @@
           "Rostock.",
           "Wismar."
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
       },
       {
@@ -8141,7 +8141,7 @@
           "Mayor/Mayoress",
           "Minister President/Minister Presidentess"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
       },
       {
@@ -8163,7 +8163,7 @@
           "Minister of Finance",
           "Minister of Interior"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
       }
     ],
@@ -8215,7 +8215,7 @@
           "Nordfriesland",
           "Vogtlandkreis"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog."
       },
       {
@@ -8259,7 +8259,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog."
       },
       {
@@ -8281,7 +8281,7 @@
           "black-yellow",
           "blue-white-red"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog."
       },
       {
@@ -8303,7 +8303,7 @@
           "at the consumer center",
           "at the churches"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog."
       },
       {
@@ -8391,7 +8391,7 @@
           "Finance Minister",
           "Interior Minister"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog."
       }
     ],
@@ -8443,7 +8443,7 @@
           "Nordfriesland",
           "Vogtlandkreis"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
       },
       {
@@ -8465,7 +8465,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
       },
       {
@@ -8509,7 +8509,7 @@
           "black-gold",
           "blue-white-red"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
       },
       {
@@ -8553,7 +8553,7 @@
           "Düsseldorf.",
           "Dortmund."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
       },
       {
@@ -8597,7 +8597,7 @@
           "Mayor/Mayoress",
           "Minister President/Minister President"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
       },
       {
@@ -8619,7 +8619,7 @@
           "Finance Minister",
           "Interior Minister"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
       }
     ],
@@ -8693,7 +8693,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
       },
       {
@@ -8715,7 +8715,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
       },
       {
@@ -8737,7 +8737,7 @@
           "black-yellow",
           "green-white-red"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
       },
       {
@@ -8759,7 +8759,7 @@
           "at the municipal office",
           "at the state center for political education"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
       },
       {
@@ -8781,7 +8781,7 @@
           "Ludwigshafen.",
           "Koblenz."
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
       },
       {
@@ -8825,7 +8825,7 @@
           "Mayor/Mayor",
           "Minister-President/Minister-President"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
       },
       {
@@ -8899,7 +8899,7 @@
           "Neunkirchen",
           "Rhein-Sieg-Kreis"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       },
       {
@@ -8921,7 +8921,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       },
       {
@@ -8943,7 +8943,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       },
       {
@@ -8987,7 +8987,7 @@
           "at the consumer center",
           "at the municipal office"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       },
       {
@@ -9009,7 +9009,7 @@
           "Saarbrücken.",
           "Völklingen."
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       },
       {
@@ -9053,7 +9053,7 @@
           "Mayor/Mayor",
           "Minister-President/Minister-President"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       },
       {
@@ -9075,7 +9075,7 @@
           "Minister of Finance",
           "Minister of the Interior"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
       }
     ],
@@ -9127,7 +9127,7 @@
           "Uckermark",
           "Nordfriesland"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
       },
       {
@@ -9171,7 +9171,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
       },
       {
@@ -9193,7 +9193,7 @@
           "green-white-red",
           "black-yellow"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
       },
       {
@@ -9215,7 +9215,7 @@
           "at the churches",
           "at the consumer center"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 0,
         "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
       },
       {
@@ -9237,7 +9237,7 @@
           "Chemnitz.",
           "Zwickau."
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
       },
       {
@@ -9303,7 +9303,7 @@
           "Minister of Finance",
           "Minister of Interior"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
       }
     ],
@@ -9355,7 +9355,7 @@
           "Uckermark",
           "Börde"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
       },
       {
@@ -9377,7 +9377,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
       },
       {
@@ -9421,7 +9421,7 @@
           "green-white-red",
           "white-red"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
       },
       {
@@ -9443,7 +9443,7 @@
           "at the municipal administrative office",
           "at the consumer center"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
       },
       {
@@ -9465,7 +9465,7 @@
           "Magdeburg.",
           "Wittenberg."
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
       },
       {
@@ -9509,7 +9509,7 @@
           "Mayor",
           "Minister-President"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
       },
       {
@@ -9583,7 +9583,7 @@
           "Nordfriesland",
           "Rhein-Sieg-Kreis"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       },
       {
@@ -9605,7 +9605,7 @@
           "5",
           "6"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       },
       {
@@ -9627,7 +9627,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       },
       {
@@ -9649,7 +9649,7 @@
           "white-red",
           "green-white-red"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       },
       {
@@ -9671,7 +9671,7 @@
           "at the state commissioner for political education",
           "at the churches"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       },
       {
@@ -9737,7 +9737,7 @@
           "Mayor/Mayor",
           "Minister President/Minister President"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       },
       {
@@ -9759,7 +9759,7 @@
           "Minister of Finance",
           "Minister of the Interior"
         ],
-        "correctAnswer": 3,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
       }
     ],
@@ -9855,7 +9855,7 @@
           "18",
           "20"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog."
       },
       {
@@ -9899,7 +9899,7 @@
           "at the state center for political education",
           "at the municipal administrative office"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 2,
         "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog."
       },
       {
@@ -9921,7 +9921,7 @@
           "Gera.",
           "Jena."
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog."
       },
       {
@@ -9965,7 +9965,7 @@
           "Mayor/Mayor",
           "Minister President/Minister President"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog."
       },
       {
@@ -9987,7 +9987,7 @@
           "Minister of Finance",
           "Minister of the Interior"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog."
       }
     ]
