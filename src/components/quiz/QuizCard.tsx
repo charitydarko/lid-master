@@ -89,10 +89,14 @@ export function QuizCard({
         </div>
 
         {/* Options */}
-        <div className="px-5 pb-5 space-y-2">
+        <div className={cn(
+          "px-5 pb-5",
+          question.imageOptions ? "grid grid-cols-2 gap-2" : "space-y-2"
+        )}>
           {question.options.map((option, idx) => {
             const isSelected = selected === idx;
             const isCorrectOption = idx === question.correctAnswer;
+            const imgSrc = question.imageOptions?.[idx];
 
             let optionClass = "option-btn";
             if (answered) {
@@ -107,34 +111,67 @@ export function QuizCard({
                 disabled={answered}
                 className={cn(
                   optionClass,
-                  "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm text-left transition-all",
+                  "w-full flex items-center gap-3 rounded-xl text-sm text-left transition-all",
                   "bg-foreground/[0.04] border border-border",
+                  imgSrc ? "flex-col p-3 items-center" : "px-4 py-3",
                   !answered && "hover:bg-primary/8",
                   answered && "cursor-default"
                 )}
                 aria-label={`Option ${idx + 1}: ${option}`}
               >
-                {/* Letter badge */}
-                <span
-                  className={cn(
-                    "flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-colors",
-                    answered && isCorrectOption
-                      ? "bg-emerald-500 text-white"
-                      : answered && isSelected && !isCorrect
-                      ? "bg-rose-500 text-white"
-                      : "bg-foreground/[0.08] text-muted-foreground"
-                  )}
-                >
-                  {["A", "B", "C", "D"][idx]}
-                </span>
-
-                <span className="flex-1 text-foreground">{option}</span>
-
-                {answered && isCorrectOption && (
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                )}
-                {answered && isSelected && !isCorrect && (
-                  <XCircle className="w-4 h-4 text-rose-400 shrink-0" />
+                {imgSrc ? (
+                  <>
+                    {/* Image option */}
+                    <div className={cn(
+                      "w-full rounded-lg overflow-hidden flex items-center justify-center p-2",
+                      "bg-white",
+                      answered && isCorrectOption && "ring-2 ring-emerald-500",
+                      answered && isSelected && !isCorrect && "ring-2 ring-rose-500",
+                    )}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={imgSrc}
+                        alt={option}
+                        className="h-20 w-full object-contain"
+                      />
+                    </div>
+                    <div className="flex items-center gap-1.5 w-full justify-between">
+                      <span className={cn(
+                        "w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold flex-shrink-0",
+                        answered && isCorrectOption ? "bg-emerald-500 text-white"
+                          : answered && isSelected && !isCorrect ? "bg-rose-500 text-white"
+                          : "bg-foreground/[0.08] text-muted-foreground"
+                      )}>
+                        {["A", "B", "C", "D"][idx]}
+                      </span>
+                      <span className="text-xs text-muted-foreground flex-1">{option}</span>
+                      {answered && isCorrectOption && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />}
+                      {answered && isSelected && !isCorrect && <XCircle className="w-3.5 h-3.5 text-rose-400 shrink-0" />}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    {/* Text option */}
+                    <span
+                      className={cn(
+                        "flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-colors",
+                        answered && isCorrectOption
+                          ? "bg-emerald-500 text-white"
+                          : answered && isSelected && !isCorrect
+                          ? "bg-rose-500 text-white"
+                          : "bg-foreground/[0.08] text-muted-foreground"
+                      )}
+                    >
+                      {["A", "B", "C", "D"][idx]}
+                    </span>
+                    <span className="flex-1 text-foreground">{option}</span>
+                    {answered && isCorrectOption && (
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    )}
+                    {answered && isSelected && !isCorrect && (
+                      <XCircle className="w-4 h-4 text-rose-400 shrink-0" />
+                    )}
+                  </>
                 )}
               </button>
             );

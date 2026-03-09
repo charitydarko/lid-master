@@ -17,6 +17,7 @@ export interface Question {
   question_en: string;
   options: string[];
   options_en: string[];
+  imageOptions?: string[];
   correctAnswer: number;
   explanation: string;
 }

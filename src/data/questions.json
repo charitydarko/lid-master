@@ -447,7 +447,7 @@
       "id": 21,
       "type": "general",
       "topic": "politik",
-      "question": "Welches ist das Wappen der Bundesrepublik Deutschland? Bild 1                Bild 2             Bild 3   Bild 4",
+      "question": "Welches ist das Wappen der Bundesrepublik Deutschland?",
       "question_en": "Question 21 (translation pending)",
       "options": [
         "Bild 1",
@@ -461,8 +461,14 @@
         "Option 3",
         "Option 4"
       ],
-      "correctAnswer": 1,
-      "explanation": "This is an official question from the Leben in Deutschland (LiD) exam catalog."
+      "correctAnswer": 0,
+      "explanation": "This is an official question from the Leben in Deutschland (LiD) exam catalog.",
+      "imageOptions": [
+        "/images/wappen-brd.svg",
+        "/images/wappen-oesterreich.svg",
+        "/images/tatzenkreuz.svg",
+        "/images/wappen-ddr.svg"
+      ]
     },
     {
       "id": 22,
@@ -4395,7 +4401,7 @@
       "id": 209,
       "type": "general",
       "topic": "gesellschaft",
-      "question": "Welches war das Wappen der Deutschen Demokratischen Republik? Bild 1                  Bild 2                Bild 3     Bild 4",
+      "question": "Welches war das Wappen der Deutschen Demokratischen Republik?",
       "question_en": "Question 209 (translation pending)",
       "options": [
         "Bild 1",
@@ -4409,8 +4415,14 @@
         "Option 3",
         "Option 4"
       ],
-      "correctAnswer": 1,
-      "explanation": "This is an official question from the Leben in Deutschland (LiD) exam catalog."
+      "correctAnswer": 3,
+      "explanation": "This is an official question from the Leben in Deutschland (LiD) exam catalog.",
+      "imageOptions": [
+        "/images/wappen-brd.svg",
+        "/images/wappen-oesterreich.svg",
+        "/images/tatzenkreuz.svg",
+        "/images/wappen-ddr.svg"
+      ]
     },
     {
       "id": 210,
@@ -4752,7 +4764,7 @@
       "id": 226,
       "type": "general",
       "topic": "politik",
-      "question": "Welche ist die Flagge der Europäischen Union? Bild 1                  Bild 2                Bild 3                 Bild 4",
+      "question": "Welche ist die Flagge der Europäischen Union?",
       "question_en": "Question 226 (translation pending)",
       "options": [
         "Bild 1",
@@ -4767,7 +4779,13 @@
         "Option 4"
       ],
       "correctAnswer": 1,
-      "explanation": "This is an official question from the Leben in Deutschland (LiD) exam catalog."
+      "explanation": "This is an official question from the Leben in Deutschland (LiD) exam catalog.",
+      "imageOptions": [
+        "/images/flagge-usa.svg",
+        "/images/flagge-eu.svg",
+        "/images/flagge-un.svg",
+        "/images/flagge-nato.svg"
+      ]
     },
     {
       "id": 227,
