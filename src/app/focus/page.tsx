@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Target, BookCheck, Inbox } from "lucide-react";
 import { usePracticeQuestions } from "@/hooks/useQuestions";
@@ -15,7 +15,13 @@ export default function FocusPage() {
   const [done, setDone] = useState(false);
 
   const { incorrectQuestionIds, recordAttempt, updateStreak } = useProgressStore();
-  const questions = usePracticeQuestions("focus");
+  const focusQuestions = usePracticeQuestions("focus");
+
+  // Snapshot questions when the session starts so that answering correctly
+  // (which removes IDs from incorrectQuestionIds and re-runs useMemo) doesn't
+  // reshuffle the list or drop questions out from under the current index.
+  const sessionQuestionsRef = useRef(focusQuestions);
+  const questions = started ? sessionQuestionsRef.current : focusQuestions;
 
   const current = questions[currentIndex];
   const isLast = currentIndex === questions.length - 1;
@@ -40,6 +46,8 @@ export default function FocusPage() {
     setCurrentIndex(0);
     setAnswers({});
     setDone(false);
+    // Clear snapshot so the landing screen shows the live (updated) list
+    sessionQuestionsRef.current = focusQuestions;
   };
 
   if (done) {
@@ -97,7 +105,11 @@ export default function FocusPage() {
             </div>
 
             <button
-              onClick={() => setStarted(true)}
+              onClick={() => {
+                // Snapshot the current focus list before starting
+                sessionQuestionsRef.current = focusQuestions;
+                setStarted(true);
+              }}
               className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl bg-rose-500 text-white font-bold text-sm hover:bg-rose-400 transition-all active:scale-95"
             >
               <Target className="w-5 h-5" />

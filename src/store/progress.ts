@@ -82,8 +82,9 @@ export const useProgressStore = create<ProgressStore>()(
               ? Math.round((topicStat.correct / topicStat.total) * 100)
               : 0;
 
+          // Remove from incorrect list when answered correctly; add when wrong
           const incorrectIds = isCorrect
-            ? state.incorrectQuestionIds
+            ? state.incorrectQuestionIds.filter((id) => id !== question.id)
             : Array.from(new Set([...state.incorrectQuestionIds, question.id]));
 
           return {
