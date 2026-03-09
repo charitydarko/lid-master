@@ -6349,7 +6349,7 @@
         "type": "state",
         "state": "Baden-Württemberg",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Baden-Württemberg? Bild 1                    Bild 2               Bild 3            Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Baden-Württemberg?",
         "question_en": "State question 1 for Baden-Württemberg (translation pending)",
         "options": [
           "Bild 1",
@@ -6364,7 +6364,13 @@
           "Option 4"
         ],
         "correctAnswer": 1,
-        "explanation": "This is an official state-specific question for Baden-Württemberg from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Baden-Württemberg from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-nw.svg",
+          "/images/wappen-bw.svg",
+          "/images/wappen-sn.svg",
+          "/images/wappen-be.svg"
+        ]
       },
       {
         "id": 2,
@@ -6571,7 +6577,7 @@
         "type": "state",
         "state": "Bayern",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Freistaat Bayern? Bild 1                    Bild 2                Bild 3      Bild 4",
+        "question": "Welches Wappen gehört zum Freistaat Bayern?",
         "question_en": "State question 1 for Bayern (translation pending)",
         "options": [
           "Bild 1",
@@ -6586,7 +6592,13 @@
           "Option 4"
         ],
         "correctAnswer": 2,
-        "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Bayern from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-sh.svg",
+          "/images/wappen-th.svg",
+          "/images/wappen-by.svg",
+          "/images/wappen-bb.svg"
+        ]
       },
       {
         "id": 2,
@@ -6793,7 +6805,7 @@
         "type": "state",
         "state": "Berlin",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Berlin? Bild 1                 Bild 2                Bild 3       Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Berlin?",
         "question_en": "State question 1 for Berlin (translation pending)",
         "options": [
           "Bild 1",
@@ -6808,7 +6820,13 @@
           "Option 4"
         ],
         "correctAnswer": 0,
-        "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Berlin from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-be.svg",
+          "/images/wappen-mv.svg",
+          "/images/wappen-rp.svg",
+          "/images/wappen-sl.svg"
+        ]
       },
       {
         "id": 2,
@@ -7015,7 +7033,7 @@
         "type": "state",
         "state": "Brandenburg",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Brandenburg? Bild 1                   Bild 2               Bild 3       Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Brandenburg?",
         "question_en": "State question 1 for Brandenburg (translation pending)",
         "options": [
           "Bild 1",
@@ -7030,7 +7048,13 @@
           "Option 4"
         ],
         "correctAnswer": 1,
-        "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Brandenburg from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-he.svg",
+          "/images/wappen-bb.svg",
+          "/images/wappen-ni.svg",
+          "/images/wappen-hh.svg"
+        ]
       },
       {
         "id": 2,
@@ -7237,7 +7261,7 @@
         "type": "state",
         "state": "Bremen",
         "topic": "staat",
-        "question": "Welches Wappen gehört zur Freien Hansestadt Bremen? Bild 1                 Bild 2              Bild 3       Bild 4",
+        "question": "Welches Wappen gehört zur Freien Hansestadt Bremen?",
         "question_en": "State question 1 for Bremen (translation pending)",
         "options": [
           "Bild 1",
@@ -7252,7 +7276,13 @@
           "Option 4"
         ],
         "correctAnswer": 3,
-        "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Bremen from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-bw.svg",
+          "/images/wappen-by.svg",
+          "/images/wappen-be.svg",
+          "/images/wappen-hb.svg"
+        ]
       },
       {
         "id": 2,
@@ -7459,7 +7489,7 @@
         "type": "state",
         "state": "Hamburg",
         "topic": "staat",
-        "question": "Welches Wappen gehört zur Freien und Hansestadt Hamburg? Bild 1                  Bild 2               Bild 3        Bild 4",
+        "question": "Welches Wappen gehört zur Freien und Hansestadt Hamburg?",
         "question_en": "State question 1 for Hamburg (translation pending)",
         "options": [
           "Bild 1",
@@ -7474,7 +7504,13 @@
           "Option 4"
         ],
         "correctAnswer": 0,
-        "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Hamburg from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-hh.svg",
+          "/images/wappen-bb.svg",
+          "/images/wappen-mv.svg",
+          "/images/wappen-sn.svg"
+        ]
       },
       {
         "id": 2,
@@ -7681,7 +7717,7 @@
         "type": "state",
         "state": "Hessen",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Hessen? Bild 1                 Bild 2             Bild 3       Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Hessen?",
         "question_en": "State question 1 for Hessen (translation pending)",
         "options": [
           "Bild 1",
@@ -7696,7 +7732,13 @@
           "Option 4"
         ],
         "correctAnswer": 2,
-        "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Hessen from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-sl.svg",
+          "/images/wappen-th.svg",
+          "/images/wappen-he.svg",
+          "/images/wappen-nw.svg"
+        ]
       },
       {
         "id": 2,
@@ -7903,7 +7945,7 @@
         "type": "state",
         "state": "Mecklenburg-Vorpommern",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Mecklenburg-Vorpommern? Bild 1                   Bild 2              Bild 3             Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Mecklenburg-Vorpommern?",
         "question_en": "State question 1 for Mecklenburg-Vorpommern (translation pending)",
         "options": [
           "Bild 1",
@@ -7918,7 +7960,13 @@
           "Option 4"
         ],
         "correctAnswer": 1,
-        "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Mecklenburg-Vorpommern from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-rp.svg",
+          "/images/wappen-mv.svg",
+          "/images/wappen-sh.svg",
+          "/images/wappen-ni.svg"
+        ]
       },
       {
         "id": 2,
@@ -8125,7 +8173,7 @@
         "type": "state",
         "state": "Niedersachsen",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Niedersachsen? Bild 1                   Bild 2              Bild 3          Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Niedersachsen?",
         "question_en": "State question 1 for Niedersachsen (translation pending)",
         "options": [
           "Bild 1",
@@ -8140,7 +8188,13 @@
           "Option 4"
         ],
         "correctAnswer": 3,
-        "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Niedersachsen from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-bw.svg",
+          "/images/wappen-he.svg",
+          "/images/wappen-bb.svg",
+          "/images/wappen-ni.svg"
+        ]
       },
       {
         "id": 2,
@@ -8347,7 +8401,7 @@
         "type": "state",
         "state": "Nordrhein-Westfalen",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen? Bild 1                      Bild 2               Bild 3             Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen?",
         "question_en": "State question 1 for Nordrhein-Westfalen (translation pending)",
         "options": [
           "Bild 1",
@@ -8362,7 +8416,13 @@
           "Option 4"
         ],
         "correctAnswer": 0,
-        "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Nordrhein-Westfalen from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-nw.svg",
+          "/images/wappen-by.svg",
+          "/images/wappen-th.svg",
+          "/images/wappen-sl.svg"
+        ]
       },
       {
         "id": 2,
@@ -8569,7 +8629,7 @@
         "type": "state",
         "state": "Rheinland-Pfalz",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Rheinland-Pfalz? Bild 1                  Bild 2               Bild 3           Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Rheinland-Pfalz?",
         "question_en": "State question 1 for Rheinland-Pfalz (translation pending)",
         "options": [
           "Bild 1",
@@ -8584,7 +8644,13 @@
           "Option 4"
         ],
         "correctAnswer": 2,
-        "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Rheinland-Pfalz from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-be.svg",
+          "/images/wappen-hb.svg",
+          "/images/wappen-rp.svg",
+          "/images/wappen-mv.svg"
+        ]
       },
       {
         "id": 2,
@@ -8791,7 +8857,7 @@
         "type": "state",
         "state": "Saarland",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Saarland? Bild 1                  Bild 2               Bild 3       Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Saarland?",
         "question_en": "State question 1 for Saarland (translation pending)",
         "options": [
           "Bild 1",
@@ -8806,7 +8872,13 @@
           "Option 4"
         ],
         "correctAnswer": 1,
-        "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Saarland from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-sn.svg",
+          "/images/wappen-sl.svg",
+          "/images/wappen-sh.svg",
+          "/images/wappen-hh.svg"
+        ]
       },
       {
         "id": 2,
@@ -9013,7 +9085,7 @@
         "type": "state",
         "state": "Sachsen",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Freistaat Sachsen? Bild 1                   Bild 2             Bild 3       Bild 4",
+        "question": "Welches Wappen gehört zum Freistaat Sachsen?",
         "question_en": "State question 1 for Sachsen (translation pending)",
         "options": [
           "Bild 1",
@@ -9028,7 +9100,13 @@
           "Option 4"
         ],
         "correctAnswer": 3,
-        "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Sachsen from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-hh.svg",
+          "/images/wappen-nw.svg",
+          "/images/wappen-bw.svg",
+          "/images/wappen-sn.svg"
+        ]
       },
       {
         "id": 2,
@@ -9235,7 +9313,7 @@
         "type": "state",
         "state": "Sachsen-Anhalt",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Sachsen-Anhalt? Bild 1                    Bild 2                Bild 3           Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Sachsen-Anhalt?",
         "question_en": "State question 1 for Sachsen-Anhalt (translation pending)",
         "options": [
           "Bild 1",
@@ -9250,7 +9328,13 @@
           "Option 4"
         ],
         "correctAnswer": 0,
-        "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Sachsen-Anhalt from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-st.svg",
+          "/images/wappen-rp.svg",
+          "/images/wappen-by.svg",
+          "/images/wappen-he.svg"
+        ]
       },
       {
         "id": 2,
@@ -9457,7 +9541,7 @@
         "type": "state",
         "state": "Schleswig-Holstein",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Bundesland Schleswig-Holstein? Bild 1                   Bild 2                Bild 3            Bild 4",
+        "question": "Welches Wappen gehört zum Bundesland Schleswig-Holstein?",
         "question_en": "State question 1 for Schleswig-Holstein (translation pending)",
         "options": [
           "Bild 1",
@@ -9472,7 +9556,13 @@
           "Option 4"
         ],
         "correctAnswer": 2,
-        "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Schleswig-Holstein from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-th.svg",
+          "/images/wappen-ni.svg",
+          "/images/wappen-sh.svg",
+          "/images/wappen-bb.svg"
+        ]
       },
       {
         "id": 2,
@@ -9679,7 +9769,7 @@
         "type": "state",
         "state": "Thüringen",
         "topic": "staat",
-        "question": "Welches Wappen gehört zum Freistaat Thüringen? Bild 1                   Bild 2               Bild 3        Bild 4",
+        "question": "Welches Wappen gehört zum Freistaat Thüringen?",
         "question_en": "State question 1 for Thüringen (translation pending)",
         "options": [
           "Bild 1",
@@ -9694,7 +9784,13 @@
           "Option 4"
         ],
         "correctAnswer": 1,
-        "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog."
+        "explanation": "This is an official state-specific question for Thüringen from the LiD exam catalog.",
+        "imageOptions": [
+          "/images/wappen-nw.svg",
+          "/images/wappen-th.svg",
+          "/images/wappen-be.svg",
+          "/images/wappen-hb.svg"
+        ]
       },
       {
         "id": 2,
