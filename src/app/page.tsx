@@ -14,11 +14,19 @@ import { cn } from "@/lib/utils";
 type ActiveMode = "topic" | "random" | "state" | null;
 type SelectedTopic = Topic | "all";
 
+import questionsData from "@/data/questions.json";
+
+const _general = questionsData.general as { topic: string }[];
+const _topicCounts = _general.reduce<Record<string, number>>((acc, q) => {
+  acc[q.topic] = (acc[q.topic] || 0) + 1;
+  return acc;
+}, {});
+
 const TOPICS: { id: SelectedTopic; label: string; icon: typeof BookOpen; color: string; count: number }[] = [
-  { id: "all", label: "All Topics", icon: GraduationCap, color: "text-blue-500 dark:text-blue-400", count: 300 },
-  { id: "politik", label: "Politik", icon: BookOpen, color: "text-blue-500 dark:text-blue-400", count: 90 },
-  { id: "geschichte", label: "Geschichte", icon: History, color: "text-amber-500 dark:text-amber-400", count: 104 },
-  { id: "gesellschaft", label: "Gesellschaft", icon: Users, color: "text-purple-500 dark:text-purple-400", count: 106 },
+  { id: "all", label: "All Topics", icon: GraduationCap, color: "text-blue-500 dark:text-blue-400", count: _general.length },
+  { id: "politik", label: "Politik", icon: BookOpen, color: "text-blue-500 dark:text-blue-400", count: _topicCounts["politik"] ?? 0 },
+  { id: "geschichte", label: "Geschichte", icon: History, color: "text-amber-500 dark:text-amber-400", count: _topicCounts["geschichte"] ?? 0 },
+  { id: "gesellschaft", label: "Gesellschaft", icon: Users, color: "text-purple-500 dark:text-purple-400", count: _topicCounts["gesellschaft"] ?? 0 },
 ];
 
 export default function PracticePage() {
