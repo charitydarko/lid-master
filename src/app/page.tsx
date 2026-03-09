@@ -29,9 +29,21 @@ const TOPICS: { id: SelectedTopic; label: string; icon: typeof BookOpen; color: 
   { id: "gesellschaft", label: "Gesellschaft", icon: Users, color: "text-purple-500 dark:text-purple-400", count: _topicCounts["gesellschaft"] ?? 0 },
 ];
 
+const CHUNK_SIZE = 50;
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function PracticePage() {
   const [activeMode, setActiveMode] = useState<ActiveMode>(null);
   const [selectedTopic, setSelectedTopic] = useState<SelectedTopic>("all");
+  const [chunkMode, setChunkMode] = useState<"all" | "chunk">("all");
   const [startSession, setStartSession] = useState(false);
   const states = useAllStates();
   const { selectedState, setSelectedState } = useProgressStore();
@@ -40,10 +52,17 @@ export default function PracticePage() {
     activeMode === "topic" ? "topic" : activeMode === "random" ? "random" : "state";
 
   const questions = usePracticeQuestions(practiceMode);
-  const filteredQuestions =
+  const topicFiltered =
     selectedTopic !== "all" && activeMode === "topic"
       ? questions.filter((q) => q.topic === selectedTopic)
       : questions;
+
+  // Apply chunk: shuffle + take first 50 when chunk mode active
+  const showChunkOption = activeMode !== "state" && topicFiltered.length > CHUNK_SIZE;
+  const filteredQuestions =
+    chunkMode === "chunk" && showChunkOption
+      ? shuffle(topicFiltered).slice(0, CHUNK_SIZE)
+      : topicFiltered;
 
   if (startSession && filteredQuestions.length > 0) {
     return (
@@ -76,7 +95,7 @@ export default function PracticePage() {
 
         <ModeCard
           active={activeMode === "topic"}
-          onClick={() => setActiveMode(activeMode === "topic" ? null : "topic")}
+          onClick={() => { setActiveMode(activeMode === "topic" ? null : "topic"); setChunkMode("all"); }}
           icon={<BookOpen className="w-5 h-5" />}
           title="Topic-wise"
           description="Study by Politik, Geschichte, or Gesellschaft"
@@ -85,7 +104,7 @@ export default function PracticePage() {
 
         <ModeCard
           active={activeMode === "random"}
-          onClick={() => setActiveMode(activeMode === "random" ? null : "random")}
+          onClick={() => { setActiveMode(activeMode === "random" ? null : "random"); setChunkMode("all"); }}
           icon={<Shuffle className="w-5 h-5" />}
           title="Random Mix"
           description="All 310 questions in random order"
@@ -94,7 +113,7 @@ export default function PracticePage() {
 
         <ModeCard
           active={activeMode === "state"}
-          onClick={() => setActiveMode(activeMode === "state" ? null : "state")}
+          onClick={() => { setActiveMode(activeMode === "state" ? null : "state"); setChunkMode("all"); }}
           icon={<Map className="w-5 h-5" />}
           title="State-Specific"
           description="10 questions for your Bundesland"
@@ -163,6 +182,46 @@ export default function PracticePage() {
                   {s}
                 </button>
               ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Chunk size picker */}
+      <AnimatePresence>
+        {showChunkOption && activeMode && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="mb-6 overflow-hidden"
+          >
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-1 mb-3">
+              Session Size
+            </p>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setChunkMode("all")}
+                className={cn(
+                  "flex-1 py-2.5 rounded-xl border text-sm font-medium transition-all",
+                  chunkMode === "all"
+                    ? "bg-primary/15 border-primary/30 text-primary"
+                    : "bg-foreground/[0.04] border-border text-muted-foreground hover:text-foreground hover:border-foreground/20"
+                )}
+              >
+                All ({topicFiltered.length})
+              </button>
+              <button
+                onClick={() => setChunkMode("chunk")}
+                className={cn(
+                  "flex-1 py-2.5 rounded-xl border text-sm font-medium transition-all",
+                  chunkMode === "chunk"
+                    ? "bg-primary/15 border-primary/30 text-primary"
+                    : "bg-foreground/[0.04] border-border text-muted-foreground hover:text-foreground hover:border-foreground/20"
+                )}
+              >
+                {CHUNK_SIZE} questions
+              </button>
             </div>
           </motion.div>
         )}
