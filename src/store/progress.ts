@@ -33,6 +33,7 @@ const defaultProgress: UserProgress = {
   skippedQuestions: 0,
   incorrectQuestionIds: [],
   masteredQuestionIds: [],
+  attemptedQuestionIds: [],
   topicStats: {
     politik: defaultTopicStats("politik"),
     geschichte: defaultTopicStats("geschichte"),
@@ -87,11 +88,17 @@ export const useProgressStore = create<ProgressStore>()(
             ? state.incorrectQuestionIds.filter((id) => id !== question.id)
             : Array.from(new Set([...state.incorrectQuestionIds, question.id]));
 
+          // Track every question that has been attempted at least once
+          const attemptedIds = Array.from(
+            new Set([...state.attemptedQuestionIds, question.id])
+          );
+
           return {
             totalAttempts: state.totalAttempts + 1,
             correctAnswers: state.correctAnswers + (isCorrect ? 1 : 0),
             incorrectAnswers: state.incorrectAnswers + (isCorrect ? 0 : 1),
             incorrectQuestionIds: incorrectIds,
+            attemptedQuestionIds: attemptedIds,
             topicStats: {
               ...state.topicStats,
               [topic]: topicStat,
@@ -158,6 +165,7 @@ export const useProgressStore = create<ProgressStore>()(
         skippedQuestions: state.skippedQuestions,
         incorrectQuestionIds: state.incorrectQuestionIds,
         masteredQuestionIds: state.masteredQuestionIds,
+        attemptedQuestionIds: state.attemptedQuestionIds,
         topicStats: state.topicStats,
         recentSessions: state.recentSessions,
         selectedState: state.selectedState,

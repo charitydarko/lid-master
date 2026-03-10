@@ -1,6 +1,6 @@
 "use client";
 
-import { Settings, Trash2, Map, GraduationCap } from "lucide-react";
+import { Settings, Trash2, Map, GraduationCap, Download, FileText } from "lucide-react";
 import { useProgressStore } from "@/store/progress";
 import { useAllStates } from "@/hooks/useQuestions";
 import { cn } from "@/lib/utils";
@@ -48,6 +48,25 @@ export default function SettingsPage() {
             Official exam: 33 questions (30 general + 3 state), 60 minutes, 67% pass rate.
           </p>
         </div>
+      </div>
+
+      {/* Download PDF */}
+      <div className="glass border border-border rounded-2xl p-5">
+        <div className="flex items-center gap-3 mb-4">
+          <FileText className="w-5 h-5 text-primary" />
+          <p className="text-sm font-semibold text-foreground">Question Bank PDF</p>
+        </div>
+        <p className="text-xs text-muted-foreground mb-4">
+          All 460 questions and answers in a printable PDF — German and English, with correct answers highlighted.
+        </p>
+        <a
+          href="/LiD-Master-Questions.pdf"
+          download="LiD-Master-Questions.pdf"
+          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary/10 border border-primary/25 text-primary text-sm font-medium hover:bg-primary/20 transition-all active:scale-95"
+        >
+          <Download className="w-4 h-4" />
+          Download PDF · 436 KB
+        </a>
       </div>
 
       {/* Default state */}

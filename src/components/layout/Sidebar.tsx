@@ -11,6 +11,7 @@ import {
   Target,
   Settings,
   GraduationCap,
+  Download,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useProgressStore } from "@/store/progress";
@@ -93,6 +94,23 @@ export function Sidebar() {
           );
         })}
       </nav>
+
+      {/* Download PDF */}
+      <div className="px-3 pb-2">
+        <a
+          href="/LiD-Master-Questions.pdf"
+          download="LiD-Master-Questions.pdf"
+          className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm transition-all duration-150 group w-full text-muted-foreground hover:text-foreground hover:bg-foreground/[0.04] border border-dashed border-border hover:border-primary/30"
+        >
+          <div className="w-7 h-7 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors shrink-0">
+            <Download className="w-3.5 h-3.5 text-primary" />
+          </div>
+          <div className="min-w-0">
+            <p className="font-medium leading-none text-xs">Download PDF</p>
+            <p className="text-[10px] text-muted-foreground mt-0.5 truncate">460 Q&amp;As · 436 KB</p>
+          </div>
+        </a>
+      </div>
 
       {/* Progress ring footer */}
       <div className="px-4 py-4 border-t border-border">

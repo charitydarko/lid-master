@@ -57,6 +57,8 @@ export interface UserProgress {
   skippedQuestions: number;
   incorrectQuestionIds: number[];
   masteredQuestionIds: number[];
+  /** Every question ID answered at least once (used for group mastery) */
+  attemptedQuestionIds: number[];
   topicStats: Record<Topic, TopicStats>;
   recentSessions: ExamSession[];
   selectedState: string;
