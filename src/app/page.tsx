@@ -62,10 +62,10 @@ export default function PracticePage() {
   // Topic-wise: keep the 50-chunk option
   const showChunkOption = activeMode === "topic" && topicFiltered.length > CHUNK_SIZE;
 
-  // Random Mix: group selection — derive questions from the selected group
+  // Random Mix: group selection — fixed order, no shuffle within the group
   const groupQuestions: typeof questions =
     activeMode === "random" && selectedGroup !== "all"
-      ? shuffle(QUESTION_GROUPS.find((g) => g.id === selectedGroup)!.questions)
+      ? QUESTION_GROUPS.find((g) => g.id === selectedGroup)!.questions
       : topicFiltered;
 
   const filteredQuestions =
@@ -194,7 +194,7 @@ export default function PracticePage() {
               </div>
             </button>
 
-            {/* Groups A–D */}
+            {/* Groups A–E: first 4 in 2-col grid, last one full-width */}
             <div className="grid grid-cols-2 gap-2">
               {QUESTION_GROUPS.map((group) => {
                 const stats = computeGroupStats(group, attemptedQuestionIds ?? [], incorrectQuestionIds);
@@ -206,6 +206,8 @@ export default function PracticePage() {
                     onClick={() => setSelectedGroup(group.id)}
                     className={cn(
                       "flex flex-col gap-2 px-4 py-3 rounded-xl border text-left transition-all",
+                      // Group E (last, odd one out) spans full width
+                      group.id === "E" && "col-span-2",
                       active
                         ? group.activeClass
                         : "bg-foreground/[0.04] border-border text-muted-foreground hover:text-foreground hover:border-foreground/20"
